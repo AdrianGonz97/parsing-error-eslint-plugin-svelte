@@ -10,7 +10,7 @@
 	<!-- This causes the new eslint-plugin-svelte to throw a parsing error -->
 	{@html `<script nonce="%sveltekit.nonce%">(${setInitialClassState.toString()})();</script>`}
 
-	<!-- This is the workaround  -->
+	<!-- This is works  -->
 	{@html `<script nonce="%sveltekit.nonce%">(` + workaround + `)();</script>`}
 </svelte:head>
 
